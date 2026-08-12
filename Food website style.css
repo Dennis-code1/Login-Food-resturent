@@ -1,0 +1,117 @@
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 2;
+
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-image:  url('ChatGPT Image Aug 12, 2026, 12_40_56 AM.png');
+            color: #30cf52;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            top: 3;
+            z-index: 1000;
+        }
+
+
+        header h1 {
+
+            font-size: 2.5em;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #287dd1;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Main Content Styles */
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+        /* Section Styles */
+        section {
+            background-color: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Food list styles */
+        .food-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .food-item {
+            flex: 1 1 200px;
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        .food-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #34495e;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #34495e;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media(max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .food-list {
+                flex-direction: column;
+            }
+        }

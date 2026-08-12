@@ -1,0 +1,356 @@
+/* =================================
+   SIGN UP PAGE
+================================= */
+
+.signup-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* =================================
+   SIGN UP LEFT SIDE
+================================= */
+
+.signup-food-section {
+    width: 50%;
+    min-height: 100vh;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("ChatGPT Image Aug 12, 2026, 12_40_56 AM.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+
+.signup-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(57, 28, 3, 0.18),
+            transparent 55%
+        );
+}
+
+
+.signup-food-content {
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 100vh;
+
+    padding: 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =================================
+   SIGN UP MESSAGE
+================================= */
+
+.signup-message {
+    max-width: 480px;
+
+    margin-top: 45px;
+
+    padding: 35px;
+
+    background:
+        rgba(0, 0, 0, 0.45);
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.15);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.signup-message i {
+    font-size: 38px;
+
+    color: #ff7900;
+
+    margin-bottom: 15px;
+}
+
+
+.signup-message h2 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.signup-message p {
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================
+   BENEFITS
+================================= */
+
+.signup-benefits {
+    width: 90%;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-top: 35px;
+
+    gap: 15px;
+}
+
+
+.signup-benefits div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: white;
+
+    font-size: 12px;
+}
+
+
+.signup-benefits i {
+    color: #ff7900;
+
+    font-size: 23px;
+}
+
+
+/* =================================
+   RIGHT SIGN UP SECTION
+================================= */
+
+.signup-section {
+    width: 50%;
+
+    min-height: 100vh;
+
+    padding: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 128, 0, 0.15),
+            transparent 35%
+        ),
+        #fff2df;
+}
+
+
+/* =================================
+   SIGN UP CARD
+================================= */
+
+.signup-card {
+    width: 100%;
+
+    max-width: 600px;
+
+    padding: 38px 48px;
+
+    background: rgba(255,255,255,0.97);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(60,35,10,0.15);
+
+    animation: cardAppear 0.7s ease;
+}
+
+
+/* =================================
+   SIGN UP HEADING
+================================= */
+
+.signup-card h1 {
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #161616;
+
+    margin-bottom: 10px;
+}
+
+
+.signup-card h1 span {
+    color: #f15b08;
+}
+
+
+.signup-description {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 28px;
+
+    line-height: 1.6;
+}
+
+
+/* =================================
+   TERMS
+================================= */
+
+.terms {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    margin: 5px 0 22px;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+
+.terms input {
+    width: 16px;
+
+    height: 16px;
+
+    margin-top: 2px;
+
+    accent-color: #ff6500;
+}
+
+
+.terms a {
+    color: #f15b08;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   SIGN UP BUTTON
+================================= */
+
+.signup-btn {
+    margin-top: 5px;
+}
+
+
+/* =================================
+   LOGIN LINK
+================================= */
+
+.login-link {
+    margin-top: 25px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .signup-food-section,
+    .signup-section {
+        width: 100%;
+    }
+
+    .signup-food-section {
+        min-height: 600px;
+    }
+
+    .signup-food-content {
+        min-height: 600px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .signup-food-content {
+        padding: 40px 20px;
+    }
+
+    .signup-benefits {
+        width: 100%;
+    }
+
+    .signup-card {
+        padding: 30px 20px;
+
+        border-radius: 20px;
+    }
+
+    .signup-card h1 {
+        font-size: 25px;
+    }
+
+}
