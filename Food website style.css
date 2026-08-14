@@ -47,7 +47,7 @@
         }
 
         nav a:hover {
-            background-color: #2980b9;
+            background-color: #020304;
         }
 
         /* Main Content Styles */
@@ -63,7 +63,8 @@
             margin-bottom: 30px;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(50, 3, 3, 0.1);
+
         }
 
         section h2 {
@@ -80,9 +81,9 @@
 
         .food-item {
             flex: 1 1 200px;
-            background-color: #ecf0f1;
+            background-color: #e0cfcf;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 8x;
             transition: transform 0.2s;
         }
 
@@ -94,12 +95,12 @@
         .food-item h3 {
             margin-bottom: 10px;
             font-size: 1.2em;
-            color: #34495e;
+            color: #1275d8;
         }
 
         /* Footer Styles */
         footer {
-            background-color: #34495e;
+            background-color: #d79819;
             color: #f8f9fa;
             text-align: center;
             padding: 20px 0;

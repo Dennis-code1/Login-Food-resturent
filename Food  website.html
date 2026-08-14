@@ -12,6 +12,8 @@
     <title>A.D World Best Food | Delicious African Cuisine</title>
 
     <link rel="stylesheet" href="Food website style.css">
+
+
 </head>
 
 <body>
@@ -19,10 +21,8 @@
     <header>
 
         <div class="logo">
-        <h1>A.D World Best Food</h1>
         </div>
 
-        <p>Celebrating the best foods from Ghana, Nigeria, and Liberia</p>
 <img src="ChatGPT Image Aug 12, 2026, 12_40_56 AM.png" width="60%" height="30%" 
                     alt="Food"
                 >
@@ -34,7 +34,7 @@
         <a href="#ghana">Ghana</a>
         <a href="#nigeria">Nigeria</a>
         <a href="#liberia">Liberia</a>
-        <a href="#Others">Others</a>       
+        <a href="#Others">Others</a>
         <a href="#contact">Contact</a>
         <a href="#Chart">Chart</a><br><br>
     </nav>
@@ -369,7 +369,7 @@
                     <h3>Greenious </h3>
                     <article>
 
-                    <img 
+                    <img
                     src="496104678_18500143810063123_7115062515781219911_n.jpg"
                     alt="Greenious"width=40%" height="45%"
                 >
@@ -403,7 +403,7 @@
                     <h3>Fried Rice </h3>
                     <article>
 
-                    <img 
+                    <img
                     src="OIP.jpg"
                     alt="Fried Rice"width="40%" height="35%"
                 >
@@ -421,7 +421,7 @@
                     <h3>Cookies delicious </h3>
                     <article>
 
-                    <img 
+                    <img
                     src="Pumpkin-Protein-Cookies-Recipe.jpg"
                     alt="Cookies "width="40%" height="40%"
                 >
@@ -434,7 +434,7 @@
                 </div>
 
 
-              </section>  
+              </section>
 
                       <hr>
 
@@ -443,76 +443,8 @@
         <section id="Chart">
              <div class="food-list">
                 <div class="chart-item">
-            <h2>Checkout</h2>
+  <a href="Checkout account index.html">Checkout Account</a><br><br>
 
-            <form>
-
-                <label for="fullname">Full Name:</label>
-                <br>
-
-                <input 
-                    type="text" 
-                    id="fullname" 
-                    name="fullname"
-                >
-
-                <br><br>
-
-             <label for="phone number">Phone number:</label>
-             <br>
-                 <input 
-                    type="text" 
-                    id="phone number" 
-                    name="phone number"
-                >
-                <br><br>
-
-
-                <label for="email">Email:</label>
-                <br>
-
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                >
-
-                <br><br>
-
-
-<label for="address">Delivery Address:</label>
-<br>
-
-<textarea
-    id="address"
-    name="address"
-    rows="5"
-    cols="30">
-</textarea>
-
-<br><br>
-
-     <label for="payment">Payment Method:</label>
-<br>
-
-<select id="payment" name="payment">
-    <option value="card">Credit/Debit Card</option>
-    <option value="mobile-money">Mobile Money</option>
-    <option value="cash">Cash on Delivery</option>
-</select>
-
-<br><br>
-
-<button type="submit">
-    Place Order
-</button>
-
-</form>
-</section>
-
-
-        <!-- Contact Section -->
-        <section id="contact">
         <h2>Contact Us</h2>
 
 
@@ -538,7 +470,7 @@
                 creative designs, and excellent customer service.
 
 
-          </p> 
+          </p>
 
 
         <div class="Web Developer">
@@ -550,7 +482,7 @@
              <img src="ChatGPT Image Aug 10, 2026, 12_28_58 PM.png" width="35%" height="45%"
                  alt="Web Developer">
 
-         <img src="WhatsApp Image 2025-05-25 at 00.11.19_2878a589.jpg"width=25%" height="10%" alt="Web Developer">
+         <img src="WhatsApp Image 2025-05-25 at 00.11.19_2878a589.jpg"width=20%" height="15%" alt="Web Developer">
 
 
         <p>
@@ -662,12 +594,12 @@
          <img src="WhatsApp Image 2025-05-19 at 17.21.46_babfc164.jpg"width="32%" height="40%" 
             alt="Our Professional Team">
             <img src="WhatsApp Image 2025-05-25 at 11.38.21_f4943041.jpg" width="25%" height="10%" 
-             alt="Our Valued Client">   
+             alt="Our Valued Client">
 
             <section id="about">
             <h2>About Us</h2>
             <p>Welcome to A.D World Best Food – your online destination for authentic and delicious dishes from Ghana, Nigeria, and Liberia. We bring the rich flavors of West Africa directly to your doorstep. Explore our menu and enjoy the best of African cuisine!</p>
-        </section>  
+        </section>
 
 
 
@@ -746,7 +678,7 @@
 
             <input type="text"
                    placeholder="Enter your full name"
-                   required><br><br>
+                   required><br>
 
 
             <label>
@@ -768,7 +700,6 @@
                 <option value="ghana">Ghana</option>
                 <option value="nigeria">Nigeria</option>
                 <option value="liberia">Liberia</option>
-                <option value="others">Others</option>
 
             </select>
 
@@ -825,9 +756,27 @@
     </footer>
     </footer>
 
+<script>
+  //const mobileToggle = document.getElementById('mobileToggle');
+  //const navLinks = document.getElementById('navLinks');
 
-    <!-- ================= JAVASCRIPT ================= -->
-    <script src="js/script.js"></script>
+  mobileToggle.addEventListener('click',() => {
+    navLinks.classList.Toggle('active');
+  })
+  //close Mobile Menu  on Nav item Click
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click',() =>{
+        navLinks.classList.remove('active');
+  });
+});
+
+//form Submission Alert
+document.getElementById('orderform').addEventListener('submit', function(e){
+ e.preventDefault();
+ alert('Than you for your order request! We will contact you shortly.');
+ this.reset();
+ })
+</script>
 
 </body>
 </html>
